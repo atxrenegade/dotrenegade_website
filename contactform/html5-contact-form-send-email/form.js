@@ -53,7 +53,7 @@ $(function()
 
                     $.ajax({
                 type: "POST",
-                        url: 'contactform/html5-contact-form-send-email/handler.php',
+                        url: './handler.php',
                 data: $form.serialize(),
                 success: after_form_submitted,
                 dataType: 'json' 
