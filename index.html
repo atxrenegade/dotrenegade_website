@@ -24,13 +24,6 @@
   
   <!-- Favicon -->
   <link rel="shortcut icon" href="images/favicon.png">
-  
-  <!-- =======================================================
-      Theme Name: Folio
-      Theme URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-      Author: BootstrapMade.com
-      Author URL: https://bootstrapmade.com
-    ======================================================= -->
     
 </head>
 
@@ -256,7 +249,6 @@
     <div class="container">
       <div class="contact-block1">
         <div class="row">
-
           <div class="col-lg-6">
             <div class="contact-contact">
 
@@ -266,52 +258,45 @@
                 <li><span>+1 512 333 4408</span></li>
                 <li><span>hello@dotrenegade.com</span></li>
               </ul>
-
             </div>
           </div>
-
-          <div class="col-lg-6">
-            <form action="" method="post" role="form" class="contactForm">
-              <div class="row">
-
-                <div id="sendmessage">Your message has been sent. Thank you!</div>
-                <div id="errormessage"></div>
-
-                <div class="col-lg-6">
-                  <div class="form-group contact-block1">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validation"></div>
+       
+          
+                <div class="col-md-6 col-md-offset-3 col-sm-12 col-xs-12">
+                  <div class="panel panel-danger">
+                    <div class="panel-body">
+                      <form id="reused_form">
+                        <div class="form-group">
+                          <label><i class="fa fa-user" aria-hidden="true"></i> Name</label>
+                          <input type="text" name="name" class="form-control" placeholder="Enter Name">
+                        </div>
+                        <div class="form-group">
+                          <label><i class="fa fa-envelope" aria-hidden="true"></i> Email</label>
+                          <input type="email" name="email" class="form-control" placeholder="Enter Email">
+                        </div>
+                        <div class="form-group">
+                          <label><i class="fa fa-comment" aria-hidden="true"></i> Message</label>
+                          <textarea rows="3" name="message" class="form-control" placeholder="Type Your Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <button class="btn btn-raised btn-block btn-danger" style='background-color: #b8a07e'>Submit &rarr;</button>
+                        </div>
+                      </form>
+                      <div id="error_message" style="width:100%; height:100%; display:none; ">
+                        <h4>
+                          Error
+                        </h4>
+                        Sorry there was an error sending your form.
+                      </div>
+                      <div id="success_message" style="width:100%; height:100%; display:none; ">
+                        <h2>Success! Your Message was Sent Successfully.</h2>
+                      </div>
+                    </div>
                   </div>
                 </div>
-
-                <div class="col-lg-6">
-                  <div class="form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <textarea class="form-control" name="message" rows="12" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                    <div class="validation"></div>
-                  </div>
-                </div>
-
-                <div class="col-lg-12">
-                  <input type="submit" class="btn btn-default btn-send" value="Send message">
-                </div>
-
               </div>
-            </form>
-          </div>
+            </div>
+            <!-- Form Ended -->
         </div>
       </div>
     </div>
@@ -343,7 +328,7 @@
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
 
   <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
+  <script src="contactform/html5-contact-form-send-email/form.js"></script>
 
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
