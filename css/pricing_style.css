@@ -293,4 +293,8 @@ div#details-container > h3 {
   span.column-spacer {
     display: none;
   }
+
+  p#copyright {
+    font-size: .60rem;
+  }
 }
