@@ -13,7 +13,7 @@ html {
   font-size: 16px;
   width: 100%;
   max-width: 1000px;
-  margin: 40px 10px;
+  margin: auto;
 }
 .snip1214 .plan {
   margin: 0;
@@ -35,7 +35,7 @@ html {
   top: 0;
   font-weight: 800;
   padding: 5px 15px;
-  margin: 0 auto;
+  margin: auto;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   margin: 0;
@@ -126,15 +126,18 @@ body {
 }
 
 #content {
-    width:80%;
-    height: 90%;
-    margin: auto;
+  height: 90%;
+  margin: auto;
 }
 
 #logo-img {
   width: 100%;
   margin-bottom: 1rem;
   margin-top: -5rem;
+}
+
+h2#table-title {
+  padding-bottom: 40px;
 }
 
 #terms-block {
@@ -154,8 +157,6 @@ body {
 }
 
 #main-line {
-  width: 3px;
-  width: 60%;
   width: 100%;
   height: 3px;
   margin-left: auto;
@@ -185,9 +186,13 @@ s::before, strike::before {
   column-rule: 3px solid #161414;;
 }
 
-h2.terms-title {
+h2.terms-title, h2#table-title {
   column-span: all;
   color: #6e6b6b;
+}
+
+h2#mobile-heading {
+  display: none;
 }
 
 div#details-container > p {
@@ -201,6 +206,10 @@ div#details-container > h3 {
 @media only screen and (max-width: 900px) {
   #details-container {
     column-count: 2;
+  }
+
+  h2#table-title {
+    padding: 0px;
   }
 }
 
@@ -230,10 +239,58 @@ div#details-container > h3 {
   #details-container {
     column-count: 1;
   }
+
+  #logo-img {
+    display: none;
+  }
+
+  h2#mobile-heading {
+    display: block;
+    font-size: 1.25rem;
+    margin-bottom: 0px;
+    margin-top: 20px;
+  }
+
+  h2#table-title {
+    margin-top: .3rem; 
+  }
+
+  div.snip1214 {
+    margin-top: 20px;
+  }
 }
 
 @media only screen and (max-width: 440px) {
   .snip1214 .plan {
     width: 100%;
+  }
+
+  div#details-container > h3 {
+    font-size: .75em; 
+  }
+  
+  h2.terms-title {
+    font-size: 1.0em; 
+  }
+
+  h2#table-title {
+    font-size: 1.5em; 
+  }
+
+  div#details-container {
+    padding: 10px;
+    margin: 0px; 
+  }
+
+  div#details-container > p {
+    color: lightgray;
+  }
+
+  #terms-block {
+    margin-top: 30px;
+  }
+
+  span.column-spacer {
+    display: none;
   }
 }
