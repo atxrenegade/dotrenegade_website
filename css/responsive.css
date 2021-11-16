@@ -3,7 +3,17 @@
  */
 
 @media (min-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
 
+  .typed {
+    font-size: 4.5rem;
+  }
+
+  #title-text {
+    font-size: 2.5rem;
+  }
 }
 
 /** Width between 992px to 1199px
@@ -11,7 +21,13 @@
  */
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .typed {
+    font-size: 4.0rem;
+  } 
   
+  #title-text {
+    font-size: 2rem;
+  }
 }
 
 /** Width between 768px to 991px
@@ -19,6 +35,13 @@
  */
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .typed {
+    font-size: 3.5rem;
+  }
+  
+  #title-text {
+    font-size: 2rem;
+  }
   /* Navbar */
   nav {
     padding: 10px 15px;
@@ -90,6 +113,16 @@
  */
 
 @media (max-width: 767px) {
+
+  /* Animated Text */
+  .typed {
+    font-size: 3.0rem;
+  }
+
+  #title-text {
+    font-size: 1.5rem;
+  }
+
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -161,6 +194,15 @@
  */
 
 @media (max-width: 600px) {
+  /* Animated Text */
+  .typed {
+    font-size: 2.5rem;
+  }
+  
+  #title-text {
+    font-size: 2rem;
+  }
+  
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -232,6 +274,14 @@
  */
 
 @media (max-width: 480px) {
+  /* Animated Text */
+  .typed {
+    font-size: 2.0rem;
+  }
+
+    #title-text {
+    font-size: 1rem;
+  }
   /* Navbar */
   nav {
     padding: 20px 15px;
@@ -302,6 +352,15 @@
  */
 
 @media (max-width: 320px) {
+  /* Animated Text */
+  .typed {
+    font-size: 1.5rem;
+  }
+
+  #title-text {
+    font-size: 1rem;
+  }
+  
   /* Navbar */
   nav {
     padding: 20px 15px;
