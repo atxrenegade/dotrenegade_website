@@ -88,8 +88,6 @@ p {
   line-height: 28px;
 }
 
-
-
 ::-moz-selection {
   background: #b8a07e;
   color: black;
@@ -150,13 +148,12 @@ p {
 }
 
 .paddsection {
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 0;
+  padding-bottom: 1rem;
 }
 
-.paddsections {
-  padding-top: 90px;
-  padding-bottom: 90px !important;
+div#contact {
+  padding-bottom: 6rem;
 }
 
 .hvr-shutter-in-horizontal::before {
@@ -225,8 +222,8 @@ nav ul li a {
 }
 
 .logo img {
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  height: auto;
 }
 
 .responsive {
